@@ -127,7 +127,7 @@ def analyze():
         day = data.get('day', 'monday').lower()
         
         # Calculate BMI
-        bmi = round(weight / (height * height), 1)
+        bmi = round(weight / (height ** 2), 2)
         
         # Determine BMI category
         if bmi < 18.5:
@@ -212,4 +212,5 @@ def nutrition_composition():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+    # app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+    app.run()
