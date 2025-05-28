@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
 
-const DietCompositionChart = ({ bmi, API_URL = 'http://localhost:5000' }) => {
+const DietCompositionChart = ({ bmi, API_URL }) => {
   const [dietData, setDietData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

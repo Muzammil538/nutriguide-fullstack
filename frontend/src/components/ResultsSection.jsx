@@ -106,7 +106,7 @@ const ResultsSection = ({ results }) => {
       </div>
 
       {/* Updated to pass the BMI value directly to the DietCompositionChart */ }
-      <DietCompositionChart bmi={ results.bmi } API_URL={ import.meta.env.VITE_API_URL || 'http://localhost:5000' } />
+      <DietCompositionChart bmi={ results.bmi } API_URL={ import.meta.env.VITE_API_URL || 'https://nutriguide-fullstack.onrender.com' } />
 
 
     </div>

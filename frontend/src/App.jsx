@@ -11,7 +11,7 @@ function App() {
   const [error, setError] = useState(null);
   
   // const API_URL = import.meta.env.VITE_API_URL || 'https://nutriguide-api.onrender.com' ;
-  const API_URL = 'https://nutriguide-backend-max6.onrender.com';
+  const API_URL = 'https://nutriguide-fullstack.onrender.com';
 
   const handleSubmit = async (formData) => {
     setLoading(true);
